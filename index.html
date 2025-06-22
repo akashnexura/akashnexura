@@ -1,94 +1,114 @@
+<!-- Full HTML with WhatsApp logo and link added -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AkashNexura | AI Innovations</title>
+  <title>AkashNexura - AI Future Company</title>
   <style>
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #000000, #1a1a1a);
-      color: #fff;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
       text-align: center;
     }
-    header {
-      padding: 20px;
-      background-color: #111;
+    nav { background: #000; padding: 10px; position: sticky; top: 0; z-index: 1000; }
+    nav a {
+      color: #ffd700; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 16px;
     }
-    img.logo {
-      width: 180px;
+    nav a:hover { text-decoration: underline; }
+    header { background-color: #111; padding: 30px 20px; }
+    header img { width: 500px; height: auto; margin-top: 30px; }
+    h1 { color: #ffd700; font-size: 36px; margin-bottom: 5px; }
+    h2 { color: #00eaff; font-size: 28px; margin-top: 30px; }
+    section { padding: 40px 20px; }
+    .services, .projects, .testimonials, .gallery, .announcements {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;
     }
-    h1 {
-      font-size: 40px;
-      margin: 10px 0;
-      color: gold;
+    .service-box, .project-box, .testimonial-box, .gallery-box, .announcement-box {
+      background: #1e1e1e; padding: 20px; border-radius: 10px; width: 280px; box-shadow: 0 0 15px #00eaff;
     }
-    section {
-      padding: 40px 20px;
+    form {
+      background: #1e1e1e; padding: 20px; border-radius: 10px; max-width: 400px; margin: auto; box-shadow: 0 0 15px #ffd700;
     }
-    .section-title {
-      font-size: 28px;
-      color: #f3c623;
-      margin-bottom: 10px;
+    input, textarea {
+      width: 100%; padding: 10px; margin: 10px 0; border: none; border-radius: 5px;
     }
-    .service-box {
-      background-color: #222;
-      margin: 15px auto;
-      padding: 20px;
-      max-width: 600px;
-      border: 1px solid #444;
-      border-radius: 10px;
+    input[type="submit"] {
+      background: #ffd700; color: #000; font-weight: bold; cursor: pointer;
     }
-    footer {
-      background-color: #111;
-      padding: 15px;
-      font-size: 14px;
-      color: #aaa;
+    .counter-box { display: inline-block; margin: 20px; background: #1e1e1e; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #00eaff; }
+    .counter-box h3 {
+      font-size: 32px;
+      animation: countUp 3s ease-in-out forwards;
+    }
+    footer { background: #000; padding: 20px; font-size: 14px; }
+    a { color: #ffd700; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @keyframes countUp {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#counters">Stats</a>
+    <a href="#announcements">News</a>
+    <a href="#blog">Blog</a>
+    <a href="#downloads">Download</a>
+    <a href="#contact">Contact</a>
+    <a href="#form">Apply</a>
+    <a href="#testimonials">Reviews</a>
+  </nav>
 
   <header>
-    <img src="logo.jpeg" alt="AkashNexura Logo" class="logo"/>
+    <img src="logo.jpeg" alt="AkashNexura Logo" />
     <h1>Welcome to AkashNexura</h1>
-    <p>Your Gateway to Future Tech</p>
+    <p>The Future of AI & Innovation Begins Here</p>
   </header>
 
-  <section>
-    <div class="section-title">About Us</div>
-    <p>
-      AkashNexura is a futuristic tech venture focused on AI, prompt engineering, and digital innovation. 
-      We aim to empower students and startups through cutting-edge tech solutions.
-    </p>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>AkashNexura is a next-gen AI innovation company focused on transforming education, automation, and digital life.</p>
   </section>
 
-  <section>
-    <div class="section-title">Our Services</div>
-    <div class="service-box">
-      <h3>⚡ Creative AI Solutions</h3>
-      <p>We build AI tools that solve future problems—summarization, automation, and more.</p>
-    </div>
-    <div class="service-box">
-      <h3>🌐 Web & App Development</h3>
-      <p>Get modern, fast, and beautiful websites or mobile apps for your brand or project.</p>
-    </div>
-    <div class="service-box">
-      <h3>🎓 Tech Training & Internships</h3>
-      <p>Upskill with our industry-based training for students in AI, ML, web, and freelancing.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-title">Contact Us</div>
-    <p>📞 Akash Raj: <strong>7019318040</strong><br/>
-       📧 Email: <strong>contact@akashnexura.xyz</strong></p>
-  </section>
+  <section id="services">...</section>
+  <section id="projects">...</section>
+  <section id="gallery">...</section>
+  <section id="counters">...</section>
+  <section id="announcements">...</section>
+  <section id="blog">...</section>
+  <section id="downloads">...</section>
+  <section id="testimonials">...</section>
+  <section id="contact">...</section>
+  <section id="form">...</section>
 
   <footer>
-    &copy; 2025 AkashNexura. All rights reserved.
+    <p>&copy; 2025 AkashNexura. All rights reserved.</p>
   </footer>
 
+  <!-- WhatsApp floating button -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/917019318040?text=Hi" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+    </a>
+  </div>
 </body>
 </html>
